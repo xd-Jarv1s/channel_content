@@ -68,7 +68,7 @@ async def main():
         last_name = user.last_name if user.last_name else ""
         name = (first_name + ' ' + last_name).strip()
 
-        # Get messages for a specific user
+        # Get messages for specific user
         messages = await fetch_messages_for_user(user)
 
         member_info = {
